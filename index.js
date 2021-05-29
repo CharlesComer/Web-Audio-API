@@ -1,4 +1,3 @@
-
 window.onerror = (e) => alert(e);
 
 const log = (...things) =>
