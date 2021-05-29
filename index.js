@@ -1,3 +1,4 @@
+
 window.onerror = (e) => alert(e);
 
 const log = (...things) =>
@@ -118,7 +119,7 @@ const Load = () =>
 
 onload = () =>
 {
-	const AudioContext = window.audioContext || window.webkitAudioContext;
+	const AudioContext = window.AudioContext || window.webkitAudioContext;
 	window.ctx = new AudioContext();
 	
 	window.gains = {
