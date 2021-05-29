@@ -118,7 +118,8 @@ const Load = () =>
 
 onload = () =>
 {
-	window.ctx = new (window.AudioContext || window.webkitAudioContext)();
+	const AudioContext = window.AudioContext || window.webkitAudioContext;
+	window.ctx = new AudioContext();
 	
 	window.gains = {
 		main: ctx.createGain()
